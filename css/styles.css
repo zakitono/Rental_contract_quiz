@@ -1,0 +1,175 @@
+body {
+  background: #144118;
+  color:#f6f0cc;
+}
+.wrapper {
+  margin: 0 auto;
+  width: 1000px;
+  margin-top: 50px;
+  position: relative;
+}
+
+#question {
+  font-size: 20px;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+h3 {
+  position: relative;
+  color: #eee;
+  font-size: 1.12em;
+  padding: 8px 0;
+  text-align: center;
+  margin: 1.5em 0 1em 0;
+}
+
+h3:before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  width: 150px;
+  height: 58px;
+  border-radius: 50%;
+  border: 5px solid #E7514A;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  -moz-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+#buttons {
+  text-align:center;
+}
+
+.button {
+  margin: 10px;
+  width: 100px;
+  height: 40px;
+  background: #EEE;
+  border: 1px solid #DDD;
+  border-radius: 8px;
+  color: #111;
+  font-size: 20px;
+  outline: none;
+}
+
+.button:hover {
+  background-color: #a1d7e0;
+  cursor: pointer;
+}
+
+#question_A {
+  margin-top: 50px;
+  font-size: 20px;
+  text-align: center;
+  background: rgb(18, 82, 5);
+  border-radius: 10px;
+}
+
+#question_A img{
+  width: 128px;
+}
+
+#result {
+  text-align: center;
+  margin: 10px;
+}
+
+#result #button {
+  background-color: #E7514A;
+  width: 300px;
+  height: 50px;
+  font-size:20px;
+  border-radius: 8px;
+  color:whitesmoke;
+  box-shadow: 0 1px 0 #dd4d45;
+  cursor: pointer;
+}
+
+#modalwindow {
+  position: absolute;
+  width: 300px;
+  background: #fff;
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  top: 50px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  border-radius: 4px;
+  text-align: center;
+  transition: 0.4s;
+}
+
+#modalwindow.hidden {
+  transform: translateY(-500px); 
+}
+
+#modalwindow > p {
+  font-size: 24px;
+  color: rgb(41, 31, 31);
+}
+
+#modalwindow > a {
+  background: #3498bd;
+  padding: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 4px 0 #2880b9;
+  display: block;
+  text-decoration: none;
+}
+
+/*--------------モバイル版*-------------------*/
+@media (max-width:800px){
+  .wrapper,h1{
+    font-size: 2em;
+  }
+
+  #question {
+    font-size: 1.8em;
+  }
+
+  .button {
+    margin: 30px;
+    height: 100px;
+    font-size: 50px;
+  }
+
+  h3:before {
+    width: 300px;
+    height: 120px;
+  }
+
+  #question_A {
+   font-size: 1.5em;
+  }
+
+  #question_A img{
+    width: 200px;
+  }
+
+  #result #button {
+    margin: 30px;
+    height: 100px;
+    font-size: 50px;
+    width: 300px;
+  }
+
+  #modalwindow {
+    width: 500px;
+  }
+
+  #modalwindow > p {
+    font-size: 30px;
+  }
+}
